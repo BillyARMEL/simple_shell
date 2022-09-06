@@ -1,11 +1,11 @@
 #include "olaf.h"
 
 /**
- *  * _strcmp - compares two strings
- *   * @s1: First string
- *    * @s2: Second string
- *     * Return: 0 if strings match. -1 Otherwise.
- *      */
+ *  _strcmp - compares two strings
+ *  @s1: First string
+ *  @s2: Second string
+ *  Return: 0 if strings match. -1 Otherwise.
+ */
 int _strcmp(char *s1, char *s2)
 {
 	int i;
@@ -21,10 +21,10 @@ int _strcmp(char *s1, char *s2)
 }
 
 /**
- *  * _strdup - create a copy of a string
- *   * @src: Contains the original string
- *    * Return: Gives back the copy of string
- *     */
+ * _strdup - create a copy of a string
+ * @src: Contains the original string
+ * Return: Gives back the copy of string
+ */
 char *_strdup(char *src)
 {
 	int i;
@@ -41,11 +41,11 @@ char *_strdup(char *src)
 }
 
 /**
- *  * print_str - Prints a string character by character.
- *   * @str: String to be printed. If the string is NULL it will print (null)
- *    * @new_line: If integer is 0 a new line will be printed. Otherwise a new line
- *     * will not be printed.
- *      */
+ *  print_str - Prints a string character by character.
+ *  @str: String to be printed. If the string is NULL it will print (null)
+ *  @new_line: If integer is 0 a new line will be printed. Otherwise a new line
+ *  will not be printed.
+ */
 void print_str(char *str, int new_line)
 {
 	int i;
@@ -59,10 +59,10 @@ void print_str(char *str, int new_line)
 }
 
 /**
- *  * _write_char - Writes a character to stdout
- *   * @c: Character that will be written to stdout
- *    * Return: Upon success how many characters were written.
- *     */
+ * _write_char - Writes a character to stdout
+ * @c: Character that will be written to stdout
+ * Return: Upon success how many characters were written.
+ */
 int _write_char(char c)
 {
 	return (write(1, &c, 1));
